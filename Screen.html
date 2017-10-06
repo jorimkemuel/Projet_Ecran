@@ -17,34 +17,33 @@
       <h4>Executive Briefing Center</h4>
       <br/>
       <br/>
-      <video class="premvideo" width="550" height="300" autoplay>
-        <source src="mov_bbb.mp4" type="video/mp4">
-        <source src="mov_bbb.mp4" type="video/ogg">
-        Your browser does not support the video tag.
+      <video id="premvideo" src="mov_bbb.mp4" type="video/mp4" width="550" height="300" autoplay>
       </video>
       <div class="videos">
         <div>
-            <video width="400" height="200">
-            <source src="mov_bbb.mp4" type="video/mp4">
-            <source src="mov_bbb.mp4" type="video/ogg">
-            Your browser does not support the video tag.
+            <video id="deuxVideo" src="IMG_1034.MP4" type="video/mp4" onclick="getId(this)" width="400" height="200">
+            </video>
+        </div>
+          <div>
+            <video id="troisVideo" src="IMG_1651.MP4" onclick="getId(this)" type="video/mp4" width="400" height="200">
       </video>
         </div>
           <div>
-            <video width="400" height="200">
-            <source src="mov_bbb.mp4" type="video/mp4">
-            <source src="mov_bbb.mp4" type="video/ogg">
-            Your browser does not support the video tag.
-      </video>
-        </div>
-          <div>
-            <video width="400" height="200">
-            <source src="mov_bbb.mp4" type="video/mp4">
-            <source src="mov_bbb.mp4" type="video/ogg">
-            Your browser does not support the video tag.
+            <video id="quatVideo" width="400" src="IMG_2195.MOV" type="video/mp4" onclick="getId(this)" height="200">
       </video>
         </div>
       </div>
+      
+      <script> 
+        var myVideo = document.getElementById("premvideo"); 
+        function getId(monId) { 
+        id = monId.id;
+        var video = document.getElementById(id);
+        var temp = myVideo.getAttribute("src");
+        myVideo.src = video.src;
+        video.src = temp;
+        } 
+      </script> 
 
 
     <!-- Optional JavaScript -->
