@@ -1,21 +1,26 @@
 body { 
   margin-left:10%;
   padding:0;
-  background: url(planet-2120004_1280.jpg) no-repeat center fixed; 
+  background: url(0001.jpg) no-repeat center fixed; 
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
   color: azure;
   font: Comic sans ms;
 }
 
+iframe{
+    position: absolute;
+    right: 16px;
+    margin-right:5%;
+    top: 15%
+}
 
 .videos{
     width: 370px;
     height: 500px;
     position: fixed;
-    top: 0px;
-    right: 16px;
-    margin-right:2%;
+    top: 5%;
+    margin-right:1%;
     margin-top:1%;
     filter: opacity(70%);
 }
@@ -37,4 +42,30 @@ body {
     word-wrap: break-word; 
     word-break: normal; 
     color:black;
+}
+
+.logo_SAP{
+     position: absolute;
+    right: 16px;
+    margin-right:5%;
+}
+
+h4 {
+    position: absolute;
+    top: 6%;
+    right: 16px;
+    margin-right:5%;
+}
+
+h5{
+    position: absolute;
+    top: 10%;
+    right: 16px;
+    margin-right:5%;
+}
+
+.text{
+    position: absolute;
+    bottom: 10%;
+    right: 30%
 }
