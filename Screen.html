@@ -17,31 +17,32 @@
       <h4>Executive Briefing Center</h4>
       <br/>
       <br/>
-      <video id="premvideo" src="mov_bbb.mp4" type="video/mp4" width="550" height="300" autoplay>
-      </video>
+      <iframe id="http://img.youtube.com/vi/faOUqk5Baf0/mqdefault.jpg" class="premVideo" width="550" height="330" 
+              src="https://www.youtube.com/embed/faOUqk5Baf0?controls=0&autoplay=1">
+      </iframe>
+      
       <div class="videos">
         <div>
-            <video id="deuxVideo" src="IMG_1034.MP4" type="video/mp4" onclick="getId(this)" width="400" height="200">
-            </video>
+            <img id="https://www.youtube.com/embed/AKee2nhLsy8?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1" onclick="getId(this)" src="http://img.youtube.com/vi/AKee2nhLsy8/mqdefault.jpg">
         </div>
+          <div> 
+              <img id="https://www.youtube.com/embed/68cNLdpDlNc?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1" onclick="getId(this)" src="http://img.youtube.com/vi/68cNLdpDlNc/mqdefault.jpg">
+          </div>
           <div>
-            <video id="troisVideo" src="IMG_1651.MP4" onclick="getId(this)" type="video/mp4" width="400" height="200">
-      </video>
+              <img id="https://www.youtube.com/embed/Kmcc1UymcUM?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1" onclick="getId(this)" src="http://img.youtube.com/vi/Kmcc1UymcUM/mqdefault.jpg">
+          <div>
+            <img id="https://www.youtube.com/embed/faOUqk5Baf0?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1" onclick="getId(this)" src="http://img.youtube.com/vi/faOUqk5Baf0/mqdefault.jpg">
         </div>
-          <div>
-            <video id="quatVideo" width="400" src="IMG_2195.MOV" type="video/mp4" onclick="getId(this)" height="200">
-      </video>
+              
         </div>
       </div>
       
       <script> 
-        var myVideo = document.getElementById("premvideo"); 
+        var myVideo = document.getElementsByClassName("premVideo")[0]; 
         function getId(monId) { 
         id = monId.id;
-        var video = document.getElementById(id);
-        var temp = myVideo.getAttribute("src");
-        myVideo.src = video.src;
-        video.src = temp;
+        myVideo.id = document.getElementById(id).src;
+        myVideo.src = id; 
         } 
       </script> 
 
