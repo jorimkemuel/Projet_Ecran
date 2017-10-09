@@ -1,0 +1,40 @@
+body { 
+  margin-left:10%;
+  padding:0;
+  background: url(planet-2120004_1280.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+  color: azure;
+  font: Comic sans ms;
+}
+
+
+.videos{
+    width: 370px;
+    height: 500px;
+    position: fixed;
+    top: 0px;
+    right: 16px;
+    margin-right:2%;
+    margin-top:1%;
+    filter: opacity(70%);
+}
+
+
+.card:hover {
+    box-shadow: 0 0 5px #fff;
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+}
+
+.premVideo{
+    /*padding-left: 30px;
+    margin-left: 50px;*/
+    margin-top:1%;
+}
+
+.videoTitle{
+    word-wrap: break-word; 
+    word-break: normal; 
+    color:black;
+}
