@@ -1,5 +1,5 @@
 body { 
-  margin:0;
+  margin-left:10%;
   padding:0;
   background: url(planet-2120004_1280.jpg) no-repeat center fixed; 
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
@@ -8,16 +8,23 @@ body {
   font: Comic sans ms;
 }
 
-img {
-    filter: opacity(50%);
+.logo_SAP {
+    /*filter: opacity(50%);*/
 }
+
 
 .videos{
     position: absolute;
     top: 8px;
     right: 16px;
+    margin-right:3%;
+    margin-top:6%;
+    filter: opacity(70%);
 }
 
-.premvideo{
-    margin-left: 10px;
+.premVideo{
+    /*padding-left: 30px;
+    margin-left: 50px;*/
+    margin-top:30px;
+    border:2px solid white;
 }
