@@ -17,25 +17,25 @@
   <body>
       <img class="logo_SAP" src= "SAP-logo.png" alt="logo SAP">
       <br/>
-      <h4>Executive Briefing Center</h4>
+      <h4>EXECUTIVE BRIEFING CENTER</h4>
       <h5>Experience Innovation @SAP</h5>
       
 
       <br/>
       <br/>
-      <iframe id="http://img.youtube.com/vi/faOUqk5Baf0/mqdefault.jpg" class="premVideo" width="800" height="500" 
+      <iframe frameborder="0" id="http://img.youtube.com/vi/faOUqk5Baf0/mqdefault.jpg" class="premVideo" width="1090" height="650" 
                src="https://www.youtube.com/embed/faOUqk5Baf0?controls=1&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;playlist=faOUqk5Baf0&amp;showinfo=0">
       </iframe>
       
         <div class="videos">
           
-          <div class="card">
+          <div class="card" >
               <img id="https://www.youtube.com/embed/AKee2nhLsy8?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=AKee2nhLsy8" onclick="getId(this) " src="http://img.youtube.com/vi/AKee2nhLsy8/mqdefault.jpg" alt="une image">
               <script>getTitle('AKee2nhLsy8',0);</script>
               <div class="videoTitle"></div>
             </div>
             <br/>
-            <div class="card"> 
+            <div class="card" > 
                <img id="https://www.youtube.com/embed/68cNLdpDlNc?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=68cNLdpDlNc" onclick="getId(this)" src="http://img.youtube.com/vi/68cNLdpDlNc/mqdefault.jpg" alt="une image">
                <script>getTitle('68cNLdpDlNc',1);</script>
                <div class="videoTitle"></div>
@@ -47,7 +47,7 @@
                 <div class="videoTitle"></div>
             </div>
             <br/>
-            <div class="card">
+            <div class="card" >
               <img id="https://www.youtube.com/embed/faOUqk5Baf0?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=faOUqk5Baf0" onclick="getId(this)" src="http://img.youtube.com/vi/faOUqk5Baf0/mqdefault.jpg" alt="une image">
               <script>getTitle('faOUqk5Baf0',3); </script>
               <div class="videoTitle"></div>
@@ -55,8 +55,10 @@
           </div>
       <div class="text">
           <br/>
-          <h3>Approchez Votre Badge</h3>
-          <h3>Pour récuperer ce contenu</h3>
+          <br/>
+          <br/>
+          <h3>APPROCHEZ VOTRE CARTE</h3>
+          <h3>Pour récuperer ce contenu vidéo</h3>
           <div class="container">
               <span class="circle">
                 <i class="fa fa-arrow-right"></i>
@@ -65,7 +67,16 @@
             </div>
           <br/><br/>
       </div>
+      <input id="rfid" name="rfid" autofocus type="texte" oninput="myFunction()">
       
+      <script>
+          function myFunction() {
+	      if (document.getElementById("rfid").value.length == 8){
+    	       alert(document.getElementById("rfid").value);
+                document.getElementById("rfid").value = "";
+           }
+          }
+      </script>
       
 
     <!-- Optional JavaScript -->
