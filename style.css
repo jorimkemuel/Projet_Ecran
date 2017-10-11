@@ -5,7 +5,7 @@ body {
     background-color:black;
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */
-    color: azure;
+    color: #F0AB00;
     font: Comic sans ms;
   }
   
@@ -33,7 +33,7 @@ body {
   }
  
   .card:hover {
-      box-shadow: 0 0 5px #fff;
+      box-shadow: 0 0 5px #F0AB00;
       filter: brightness(0.6);
       -webkit-filter: brightness(0.6);
   }
@@ -85,7 +85,7 @@ body {
     border-radius:10px;
     border-bottom-left-radius:0px;
     border-bottom-right-radius:0px;
-      background-color: orange;
+      background-color: #F0AB00;
       color:white;
       position: absolute;
       bottom: 0%;
@@ -108,7 +108,7 @@ body {
     position: absolute ;
   }
   .circle {
-    background-color:orange;
+    background-color:#F0AB00;
     height: 120px;
     width: 120px;
     display: block;

@@ -23,33 +23,45 @@
 
       <br/>
       <br/>
-      <iframe frameborder="0" id="http://img.youtube.com/vi/faOUqk5Baf0/mqdefault.jpg" class="premVideo" width="1090" height="650" 
-               src="https://www.youtube.com/embed/faOUqk5Baf0?controls=1&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;playlist=faOUqk5Baf0&amp;showinfo=0">
-      </iframe>
       
+  
+      <iframe frameborder="0" class="premVideo" width="1090" height="650" src="">
+      </iframe>
+      <script>
+          document.getElementsByClassName("premVideo")[0].src = "https://www.youtube.com/embed/"+ url_now +"?controls=1&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;playlist="+ url_now+"&amp;showinfo=0";
+        </script>
         <div class="videos">
           
           <div class="card" >
-              <img id="https://www.youtube.com/embed/AKee2nhLsy8?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=AKee2nhLsy8" onclick="getId(this) " src="http://img.youtube.com/vi/AKee2nhLsy8/mqdefault.jpg" alt="une image">
-              <script>getTitle('AKee2nhLsy8',0);</script>
+              <img id="card0" onclick="getId(0) " src="" alt="une image">
+              <script>
+              getTitle(url_0,0);
+               document.getElementById("card0").src = "http://img.youtube.com/vi/"+ url_0 +"/mqdefault.jpg";
+              </script>
               <div class="videoTitle"></div>
             </div>
             <br/>
             <div class="card" > 
-               <img id="https://www.youtube.com/embed/68cNLdpDlNc?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=68cNLdpDlNc" onclick="getId(this)" src="http://img.youtube.com/vi/68cNLdpDlNc/mqdefault.jpg" alt="une image">
-               <script>getTitle('68cNLdpDlNc',1);</script>
+               <img id="card1" onclick="getId(1)" src="" alt="une image">
+               <script>getTitle(url_1,1);
+                document.getElementById("card1").src = "http://img.youtube.com/vi/"+ url_1 +"/mqdefault.jpg";
+               </script>
                <div class="videoTitle"></div>
             </div>
             <br/>
             <div class="card">
-                <img id="https://www.youtube.com/embed/Kmcc1UymcUM?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=Kmcc1UymcUM" onclick="getId(this)" src="http://img.youtube.com/vi/Kmcc1UymcUM/mqdefault.jpg" alt="une image">
-                <script>getTitle('Kmcc1UymcUM',2);</script>
+                <img id="card2" onclick="getId(2)" src="" alt="une image">
+                <script>getTitle(url_2,2);
+                 document.getElementById("card2").src = "http://img.youtube.com/vi/"+ url_2 +"/mqdefault.jpg";
+                </script>
                 <div class="videoTitle"></div>
             </div>
             <br/>
             <div class="card" >
-              <img id="https://www.youtube.com/embed/faOUqk5Baf0?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=faOUqk5Baf0" onclick="getId(this)" src="http://img.youtube.com/vi/faOUqk5Baf0/mqdefault.jpg" alt="une image">
-              <script>getTitle('faOUqk5Baf0',3); </script>
+              <img id="card3" onclick="getId(3)" src="" alt="une image">
+              <script>getTitle(url_3,3);
+               document.getElementById("card3").src = "http://img.youtube.com/vi/"+ url_3 +"/mqdefault.jpg";
+                </script>
               <div class="videoTitle"></div>
             </div>
           </div>
@@ -68,16 +80,6 @@
           <br/><br/>
       </div>
       <input id="rfid" name="rfid" autofocus type="texte" oninput="myFunction()">
-      
-      <script>
-          function myFunction() {
-	      if (document.getElementById("rfid").value.length == 8){
-    	       alert(document.getElementById("rfid").value);
-                document.getElementById("rfid").value = "";
-           }
-          }
-      </script>
-      
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
