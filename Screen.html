@@ -15,7 +15,21 @@
     <script src="video.js"></script> 
   </head>
   <body>
-      <img class="logo_SAP" src= "SAP-logo.png" alt="logo SAP">
+      
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <p>Un mail avec le lien de cette vidéo vous a été envoyé.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <img class="logo_SAP" src= "SAP_grad_R_pref.gif" alt="logo SAP">
       <br/>
       <h4>EXECUTIVE BRIEFING CENTER</h4>
       <h5>Experience Innovation @SAP</h5>
@@ -69,8 +83,10 @@
           <br/>
           <br/>
           <br/>
-          <h3>APPROCHEZ VOTRE CARTE</h3>
-          <h3>Pour récuperer ce contenu vidéo</h3>
+          <div class="text_bottom" onclick="toucher()">
+            <p>TOUCHEZ <br/>
+            Pour récupérer ce contenu</p>
+          </div>
           <div class="container">
               <span class="circle">
                 <i class="fa fa-arrow-right"></i>
@@ -78,8 +94,10 @@
               <span class="pulse"></span>
             </div>
           <br/><br/>
+          <div class="input"></div>
       </div>
-      <input id="rfid" name="rfid" autofocus type="texte" oninput="myFunction()">
+      
+      <input id="rfid" name="rfid" type="texte" oninput="myFunction()">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
