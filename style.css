@@ -57,13 +57,17 @@ body {
         position: absolute;
       right: 16px;
       margin-right:5%;
-      filter: opacity(50%)
   }
+
+.modal-content{
+    background-color: #F0AB00;
+    color : black;
+}
 
 #rfid{
     position: fixed;
     bottom: 5%;
-    left: 90% ;
+    left: 85% ;
     filter: opacity(0%);
 }
   
@@ -80,6 +84,8 @@ body {
       right: 16px;
       margin-right:5%;
   }
+
+
   
   .text{
     border-radius:10px;
@@ -99,6 +105,19 @@ body {
       padding-left: 8%;
   }
 
+.text_bottom {
+      position: absolute;
+      margin-left:9%;
+      font-size: 30px;
+  }
+
+.input{
+    position: fixed;
+    bottom: 10%;
+    left: 85% ;
+    font-size: 20px;
+
+}
   
   .container {
     height: 120px;
