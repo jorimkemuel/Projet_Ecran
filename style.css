@@ -78,11 +78,26 @@ body {
     filter: opacity(100%);
 }
   
-#badge{
-    position: fixed;
+.badge{
     bottom: 0.1%;
     left: 86% ;
+    position: absolute;
+    animation-name:badgeJump;
+    animation-duration:1s;
+    animation-timing-function:ease;
+    animation-delay:3s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    -webkit-animation-name:badgeJump;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:ease;
+    -webkit-animation-delay:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
 }
+
   h4 {
       position: absolute;
       top: 6%;
@@ -97,7 +112,6 @@ body {
       margin-right:5%;
   }
 
-
   
   .text{
     border-radius:10px;
@@ -107,9 +121,9 @@ body {
       color:white;
       position: absolute;
       bottom: 0%;
-      right: 16%;
+      right: 0%;
       filter: opacity(80%);
-      width: 900px;
+      width: 1200px;
       height: 200px;
   }
 
@@ -136,9 +150,10 @@ body {
     width: 120px;
     margin-left:550px;
     top:50px;
-    right: 30%;
+    /*right: 30%;*/
     position: absolute ;
   }
+
   .circle {
     background-color:#F0AB00;
     height: 120px;
@@ -207,6 +222,19 @@ body {
       -webkit-animation: pulse 1s linear infinite 0.3s;
       -moz-animation: pulse 1s linear infinite 0.3s; 
       border-image: initial;
+  }
+  @keyframes badgeJump
+  {
+  0%   {bottom:0px;
+  }
+  75% {bottom:30px;}
+  100% {bottom:0px;}
+  }
+@-webkit-keyframes badgeJump
+  {
+  0%  {bottom:0px;}
+  75% {bottom:30px;}
+  100% {bottom:0px;}
   }
   @keyframes arrow
       {
