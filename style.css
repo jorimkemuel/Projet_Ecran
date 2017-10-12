@@ -70,7 +70,19 @@ body {
     left: 85% ;
     filter: opacity(0%);
 }
+
+#mail{
+    position: fixed;
+    bottom: 5%;
+    left: 95% ;
+    filter: opacity(100%);
+}
   
+#badge{
+    position: fixed;
+    bottom: 0.1%;
+    left: 86% ;
+}
   h4 {
       position: absolute;
       top: 6%;
@@ -95,9 +107,9 @@ body {
       color:white;
       position: absolute;
       bottom: 0%;
-      right: 0%;
+      right: 16%;
       filter: opacity(80%);
-      width: 1200px;
+      width: 900px;
       height: 200px;
   }
 
@@ -124,6 +136,7 @@ body {
     width: 120px;
     margin-left:550px;
     top:50px;
+    right: 30%;
     position: absolute ;
   }
   .circle {

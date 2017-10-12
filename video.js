@@ -34,11 +34,13 @@ function myFunction() {
         pstmt.execute();
         dbconn.commit();
         dbconn.close();*/
+        //document.getElementById("mail").click();
         document.getElementById("rfid").value = "";
         document.getElementsByClassName("input")[0].innerHTML="";
         document.getElementsByClassName("text_bottom")[0].innerHTML="<p>TOUCHEZ<br/>Pour récupérer ce contenu</p>";
         document.getElementById("rfid").blur();
         $('#myModal').modal('show');
+        
      }
 
     }
