@@ -8,7 +8,11 @@ body {
     color: #F0AB00;
     font: Comic sans ms;
   }
-  
+  .logo_SAP{
+     margin-top: 10px;
+    height: 40px;
+    width: 80px;
+  }
   iframe{
       position: absolute;
       right: 16px;
@@ -17,7 +21,7 @@ body {
   }
   
   .videos{
-      width: 350px;
+      width: 370px;
       height: 1000px;
       position: fixed;
       top: 2%;
@@ -28,11 +32,12 @@ body {
   
 .card{
     overflow:hidden;
-    width: 350px;
-    height: 230px;
+    width: 370px;
+    height: 250px;
     background-color: black;
   }
  .card img{
+
     filter: brightness(0.6);
     -webkit-filter: brightness(0.6);
     display:block;
@@ -60,7 +65,7 @@ body {
   .card .videoTitle {
     filter: brightness(1);
     -webkit-filter: brightness(1);
-    width: 350px;
+    width: 370px;
     height: 230px;
     position: absolute;
     padding-top: 50px;
