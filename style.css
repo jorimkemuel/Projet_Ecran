@@ -17,7 +17,7 @@ body {
   }
   
   .videos{
-      width: 390px;
+      width: 350px;
       height: 1000px;
       position: fixed;
       top: 2%;
@@ -27,17 +27,29 @@ body {
   }
   
 .card{
+    overflow:hidden;
     width: 350px;
     height: 230px;
     background-color: black;
   }
- 
-  .card:hover {
-      box-shadow: 0 0 5px #F0AB00;
-      filter: brightness(0.6);
-      -webkit-filter: brightness(0.6);
+ .card img{
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+    display:block;
+    position:relative;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+ }
+
+  .card:hover img{
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
   }
-  
+ 
+
   .premVideo{
       /*padding-left: 30px;
       margin-left: 50px;*/
@@ -45,16 +57,25 @@ body {
       
   }
   
-  .videoTitle{
-      
-      word-wrap: break-word; 
-      word-break: normal; 
-      color:white;
-      font-size: 18px;
+  .card .videoTitle {
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+    width: 350px;
+    height: 230px;
+    position: absolute;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font:center;
+    word-wrap: break-word; 
+    word-break: normal; 
+    color:white;
+    font-size: 30px;
   }
   
   .logo_SAP{
-        position: absolute;
+    position: absolute;
       right: 16px;
       margin-right:5%;
   }

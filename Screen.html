@@ -44,40 +44,42 @@
         </script>
         <div class="videos">
           
-          <div class="card" >
-              <img id="card0" onclick="getId(0) " src="" alt="une image">
-              <script>
-              getTitle(url_0,0);
-               document.getElementById("card0").src = "http://img.youtube.com/vi/"+ url_0 +"/mqdefault.jpg";
-              </script>
-              <div class="videoTitle"></div>
-            </div>
+            <div class="card" > 
+                <img id="card0" src="" alt="une image">
+                <h1 class="videoTitle" onclick="getId(0)"></h1>
+                <script>
+                   getTitle(url_0,0);
+                   document.getElementById("card0").src = "http://img.youtube.com/vi/"+ url_0 +"/mqdefault.jpg";
+                 </script>
+         </div>
             <br/>
             <div class="card" > 
-               <img id="card1" onclick="getId(1)" src="" alt="une image">
-               <script>
-               getTitle(url_1,1);
-                document.getElementById("card1").src = "http://img.youtube.com/vi/"+ url_1 +"/mqdefault.jpg";
-               </script>
-               <div class="videoTitle"></div>
+                   <img id="card1" src="" alt="une image">
+                   <h1 class="videoTitle" onclick="getId(1)"></h1>
+                   <script>
+                      getTitle(url_1,1);
+                      document.getElementById("card1").src = "http://img.youtube.com/vi/"+ url_1 +"/mqdefault.jpg";
+                    </script>
             </div>
             <br/>
             <div class="card">
-                <img id="card2" onclick="getId(2)" src="" alt="une image">
+                <img id="card2" src="" alt="une image">
+                <h1 class="videoTitle" onclick="getId(2)" ></h1>
                 <script>
                 getTitle(url_2,2);
-                 document.getElementById("card2").src = "http://img.youtube.com/vi/"+ url_2 +"/mqdefault.jpg";
+                document.getElementById("card2").src = "http://img.youtube.com/vi/"+ url_2 +"/mqdefault.jpg";
                 </script>
-                <div class="videoTitle"></div>
+              
             </div>
             <br/>
             <div class="card" >
-              <img id="card3" onclick="getId(3)" src="" alt="une image">
+              <img id="card3" src="" alt="une image">
+              <h1 class="videoTitle" onclick="getId(3)" ></h1>
               <script>
               getTitle(url_3,3);
-               document.getElementById("card3").src = "http://img.youtube.com/vi/"+ url_3 +"/mqdefault.jpg";
+              document.getElementById("card3").src = "http://img.youtube.com/vi/"+ url_3 +"/mqdefault.jpg";
                 </script>
-              <div class="videoTitle"></div>
+              
             </div>
           </div>
       <div class="text">
@@ -100,10 +102,8 @@
               <i class="badge"><img  src="image_badge.jpg" alt="image badge"></i>
           </span>
       </div>
-      <!--<form method="POST" action="mail.php">-->
-        <input id="rfid" name="rfid" type="text" oninput="myFunction(urlNow)">
-        <!--<input id="mail" type="submit" name="Jorim">
-      </form>-->
+  
+        <input autofocus id="rfid" name="rfid" type="text" oninput="myFunction(urlNow)">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
